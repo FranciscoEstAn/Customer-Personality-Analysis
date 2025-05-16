@@ -66,11 +66,18 @@ DBSCAN no requiere un número de clústeres predefinido. Se exploraron diferente
 
 ## Visualización y Análisis de Resultados
 
+### Selección del Número Óptimo de Clusters
+Para determinar el número óptimo de clusters se utilizaron dos métodos: el método del codo y el coeficiente de Silhouette. El método del codo evalúa la inercia (la suma de los errores cuadráticos dentro de los clusters) y mostró un punto de inflexión en K=5, lo que sugiere que añadir más clusters no mejora significativamente la segmentación. Por otro lado, el coeficiente de Silhouette mide qué tan bien está un punto dentro de su cluster en comparación con otros clusters. Aunque su valor máximo se presenta en K=2, el valor en K=5 también fue alto, lo cual valida esta elección desde otro enfoque.
+
 ### Método del Codo y Silhouette
 
 ![Elbow y Silhouette](Imagenes/elbow_silhouette.png)
 
 Estas gráficas confirman que K=5 ofrece una segmentación equilibrada.
+
+### Aplicación de Modelos de Clustering y Reducción de Dimensionalidad
+Posteriormente, se procedió a la aplicación de los algoritmos de clustering K-Means y DBSCAN, y se utilizaron técnicas de reducción de dimensionalidad como PCA y t-SNE para visualizar los resultados. Se generaron proyecciones en dos dimensiones para ambos algoritmos, permitiendo evaluar la coherencia visual de los clusters.
+
 
 ### k-Distance Plot para DBSCAN
 
@@ -152,5 +159,7 @@ Limitaciones:
 
 ## Autores
 
-Francisco Estupiñan, Kevin Bolaños, José Montaño  
+Francisco Estupiñan 
+María Fernanda Bolaños
+Fernando Montaño  
 Proyecto de Segmentación de Usuarios - 2025
