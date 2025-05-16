@@ -75,20 +75,16 @@ Para determinar el número óptimo de clusters se utilizaron dos métodos: el m�
 
 Estas gráficas confirman que K=5 ofrece una segmentación equilibrada.
 
-### Aplicación de Modelos de Clustering y Reducción de Dimensionalidad
-Posteriormente, se procedió a la aplicación de los algoritmos de clustering K-Means y DBSCAN, y se utilizaron técnicas de reducción de dimensionalidad como PCA y t-SNE para visualizar los resultados. Se generaron proyecciones en dos dimensiones para ambos algoritmos, permitiendo evaluar la coherencia visual de los clusters.
-
-![k-distance](Imagenes/tsne_projection.png)
-
-
-
 ### k-Distance Plot para DBSCAN
 
 ![k-distance](Imagenes/k_distance_plot.png)
 
 Ayuda a seleccionar el `eps` óptimo para DBSCAN. La "rodilla" indica la distancia crítica.
 
-### Visualización con PCA y t-SNE
+### Aplicación de Modelos de Clustering y Reducción de Dimensionalidad
+Posteriormente, se procedió a la aplicación de los algoritmos de clustering K-Means y DBSCAN, y se utilizaron técnicas de reducción de dimensionalidad como PCA y t-SNE para visualizar los resultados. Se generaron proyecciones en dos dimensiones para ambos algoritmos, permitiendo evaluar la coherencia visual de los clusters.
+
+#### Visualización con PCA y t-SNE
 
 ![PCA](Imagenes/pca_kmeans.png)
 ![t-SNE](Imagenes/tsne_projection.png)
@@ -99,7 +95,10 @@ PCA permite ver una distribución lineal. t-SNE expone relaciones no lineales y 
 
 ![Comparativa](Imagenes/comparativa_pca_kmeans_dbscan.png)
 
-KMeans mostró límites definidos entre grupos. DBSCAN, con la parametrización actual, generó un único grupo con ruido disperso.
+En la parte izquierda de la imagen, K-Means logra separar los datos en cinco agrupaciones bastante diferenciadas. 
+Se observa una distribución más compacta y organizada, con límites claros entre los grupos. Por otro lado, DBSCAN (parte derecha) identifica un único cluster principal y solo unos pocos puntos como ruido (etiquetados como -1). 
+Esto indica que, con la configuración actual de parámetros (eps y min_samples), DBSCAN no encuentra estructura suficiente para generar múltiples grupos significativos en este conjunto de datos escalados.
+
 
 ---
 
