@@ -80,6 +80,8 @@ Posteriormente, se procedió a la aplicación de los algoritmos de clustering K-
 
 ![k-distance](Imagenes/tsne_projection.png)
 
+
+
 ### k-Distance Plot para DBSCAN
 
 ![k-distance](Imagenes/k_distance_plot.png)
