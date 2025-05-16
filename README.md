@@ -32,34 +32,34 @@ En este proyecto se aplican algoritmos no supervisados como KMeans y DBSCAN sobr
 ## Entorno de trabajo: versiones, librerías y herramientas.
 
 ### Entorno de Trabajo
-- Google Colab Notebook (formato .ipynb)
-- ython 3.x
-- Ejecución basada en entorno de notebook 
+- Google Colab Notebook (formato .ipynb).
+- ython 3.x.
+- Ejecución basada en entorno de notebook. 
 ________________________________________
 ### Librerías Importadas
 #### Manipulación y Análisis de Datos:
-- **pandas** – estructuras tipo DataFrame para manipular datos
-- **numpy** – operaciones matemáticas y manejo de arrays
+- **pandas** – estructuras tipo DataFrame para manipular datos.
+- **numpy** – operaciones matemáticas y manejo de arrays.
 #### Visualización:
-- **matplotlib.pyplot** – creación de gráficos estáticos (líneas, barras, etc.)
-- **seaborn** – visualización estadística elegante sobre matplotlib
+- **matplotlib.pyplot** – creación de gráficos estáticos (líneas, barras, etc.).
+- **seaborn** – visualización estadística elegante sobre matplotlib.
 #### Preprocesamiento y Reducción de Dimensionalidad:
-- **sklearn.preprocessing.StandardScaler** – estandarización de variables
-- **sklearn.decomposition.PCA** – reducción lineal de dimensionalidad
-- **sklearn.manifold.TSNE** – reducción no lineal para visualización avanzada
+- **sklearn.preprocessing.StandardScaler** – estandarización de variables.
+- **sklearn.decomposition.PCA** – reducción lineal de dimensionalidad.
+- **sklearn.manifold.TSNE** – reducción no lineal para visualización avanzada.
 #### Algoritmos de Clustering:
-- **sklearn.cluster.KMeans** – clustering particional
-- **sklearn.cluster.DBSCAN** – clustering basado en densidad
+- **sklearn.cluster.KMeans** – clustering particional.
+- **sklearn.cluster.DBSCAN** – clustering basado en densidad.
 #### Métricas y Evaluación:
-- **sklearn.metrics.silhouette_score** – medida de calidad del clustering
-- **sklearn.neighbors.NearestNeighbors** – análisis de vecinos más cercanos (para estimar eps en DBSCAN)
+- **sklearn.metrics.silhouette_score** – medida de calidad del clustering.
+- **sklearn.neighbors.NearestNeighbors** – análisis de vecinos más cercanos (para estimar eps en DBSCAN).
 ________________________________________
 ### Herramientas Técnicas Derivadas
-- **Gráficas:** codo, silhouette, t-SNE, PCA
-- **Análisis estadístico:** media, desviación estándar, percentiles
-- **Visualización exploratoria:** mapas de calor, boxplots
-- **Reducción de dimensionalidad:** PCA y t-SNE para comprensión visual
-- **Evaluación del modelo:** coeficiente de Silhouette y visualización de clusters
+- **Gráficas:** codo, silhouette, t-SNE, PCA.
+- **Análisis estadístico:** media, desviación estándar, percentiles.
+- **Visualización exploratoria:** mapas de calor, boxplots.
+- **Reducción de dimensionalidad:** PCA y t-SNE para comprensión visual.
+- **Evaluación del modelo:** coeficiente de Silhouette y visualización de clusters.
 
 ---
 
