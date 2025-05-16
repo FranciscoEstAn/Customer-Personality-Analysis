@@ -33,7 +33,7 @@ En este proyecto se aplican algoritmos no supervisados como KMeans y DBSCAN sobr
 
 ### Entorno de Trabajo
 - Google Colab Notebook (formato .ipynb).
-- ython 3.x.
+- ython 3.10.
 - Ejecución basada en entorno de notebook. 
 ________________________________________
 ### Librerías Importadas
