@@ -82,9 +82,16 @@ Posteriormente, se procedió a la aplicación de los algoritmos de clustering K-
 #### Visualización con PCA y t-SNE
 
 ![PCA](Imagenes/pca_kmeans.png)
+Facilita la reducción de dimensiones a 2 usando PCA, esto para la visualización.
+
+#### K-Means con t-SNE (Visualización No Lineal)
 ![t-SNE](Imagenes/tsne_projection.png)
 
-Facilita la reducción de dimensiones a 2 usando PCA, esto para la visualización.
+Las visualizaciones obtenidas muestran que el algoritmo K-Means produce agrupaciones simétricas y bien definidas tanto en PCA como en t-SNE. Por su parte, DBSCAN permite identificar agrupaciones más libres y detecta puntos de ruido (outliers), los cuales aparecen dispersos. Con t-SNE se aprecia una mejor separación entre clusters, lo que permite visualizar estructuras complejas que PCA no logra capturar completamente.
+
+PCA permite ver una distribución lineal. t-SNE expone relaciones no lineales y muestra mejor separación entre los clústeres generados por KMeans.
+
+
 
 ### Visualización Comparativa de Modelos
 #### Comparativa entre K-Means y DBSCAN con PCA
@@ -107,13 +114,6 @@ Aquí se confirma que DBSCAN clasificó a casi todos los puntos dentro de un ún
 ![k-distance](Imagenes/k_distance_plot.png)
 
 Ayuda a seleccionar el `eps` óptimo para DBSCAN. La "rodilla" indica la distancia crítica.
-
-#### K-Means con t-SNE (Visualización No Lineal)
-![t-SNE](Imagenes/tsne_projection.png)
-
-Las visualizaciones obtenidas muestran que el algoritmo K-Means produce agrupaciones simétricas y bien definidas tanto en PCA como en t-SNE. Por su parte, DBSCAN permite identificar agrupaciones más libres y detecta puntos de ruido (outliers), los cuales aparecen dispersos. Con t-SNE se aprecia una mejor separación entre clusters, lo que permite visualizar estructuras complejas que PCA no logra capturar completamente.
-
-PCA permite ver una distribución lineal. t-SNE expone relaciones no lineales y muestra mejor separación entre los clústeres generados por KMeans.
 
 ---
 
@@ -196,11 +196,6 @@ A continuación, se presenta el análisis estadístico por clúster. En lugar de
 
 ---
 
-## Anexos
-
-- Dataset: `marketing_campaign.csv`
-- Notebook: `Segmentacion_usuarios_unsupervised_v2.ipynb`
-- Carpeta de Imágenes: `/Imagenes/`
 
 ---
 
