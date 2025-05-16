@@ -78,6 +78,7 @@ Estas gráficas confirman que K=5 ofrece una segmentación equilibrada.
 ### Aplicación de Modelos de Clustering y Reducción de Dimensionalidad
 Posteriormente, se procedió a la aplicación de los algoritmos de clustering K-Means y DBSCAN, y se utilizaron técnicas de reducción de dimensionalidad como PCA y t-SNE para visualizar los resultados. Se generaron proyecciones en dos dimensiones para ambos algoritmos, permitiendo evaluar la coherencia visual de los clusters.
 
+![k-distance](Imagenes/tsne_projection.png)
 
 ### k-Distance Plot para DBSCAN
 
