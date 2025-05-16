@@ -4,16 +4,16 @@
 
 1. [Objetivos](#objetivos)
 2. [Introducción](#introducción)
-3. [Descripción del Conjunto de Datos](#descripción-del-conjunto-de-datos)
-4. [Preprocesamiento de Datos](#preprocesamiento-de-datos)
-5. [Aplicación de Algoritmos de Clustering](#aplicación-de-algoritmos-de-clustering)
-6. [Visualización y Análisis de Resultados](#visualización-y-análisis-de-resultados)
-7. [Resumen de Características por Clúster](#resumen-de-características-por-clúster)
-8. [Comparación entre KMeans y DBSCAN](#comparación-entre-kmeans-y-dbscan)
-9. [Análisis Técnico Detallado](#análisis-técnico-detallado)
-10. [Conclusiones](#conclusiones)
-11. [Recomendaciones](#recomendaciones)
-12. [Anexos](#anexos)
+3. [Entorno de Trabajo](#Entorno-de-trabajo)
+4. [Descripción del Conjunto de Datos](#descripción-del-conjunto-de-datos)
+5. [Preprocesamiento de Datos](#preprocesamiento-de-datos)
+6. [Aplicación de Algoritmos de Clustering](#aplicación-de-algoritmos-de-clustering)
+7. [Visualización y Análisis de Resultados](#visualización-y-análisis-de-resultados)
+8. [Resumen de Características por Clúster](#resumen-de-características-por-clúster)
+9. [Comparación entre KMeans y DBSCAN](#comparación-entre-kmeans-y-dbscan)
+10. [Análisis Técnico Detallado](#análisis-técnico-detallado)
+11. [Conclusiones](#conclusiones)
+12. [Recomendaciones](#recomendaciones)
 13. [Autores](#autores)
 
 ---
@@ -27,6 +27,39 @@ Implementar modelos de aprendizaje no supervisado para identificar segmentos de 
 ## Introducción
 
 En este proyecto se aplican algoritmos no supervisados como KMeans y DBSCAN sobre un dataset de clientes, con el objetivo de segmentar perfiles de comportamiento y consumo. Se incluyen técnicas como PCA y t-SNE para reducir dimensionalidad y facilitar la visualización de resultados.
+
+---
+## Entorno de trabajo: versiones, librerías y herramientas.
+
+### Entorno de Trabajo
+•	Google Colab Notebook (formato .ipynb)
+•	Python 3.x
+•	Ejecución basada en entorno de notebook 
+________________________________________
+### Librerías Importadas
+#### Manipulación y Análisis de Datos:
+•	pandas – estructuras tipo DataFrame para manipular datos
+•	numpy – operaciones matemáticas y manejo de arrays
+#### Visualización:
+•	matplotlib.pyplot – creación de gráficos estáticos (líneas, barras, etc.)
+•	seaborn – visualización estadística elegante sobre matplotlib
+#### Preprocesamiento y Reducción de Dimensionalidad:
+•	sklearn.preprocessing.StandardScaler – estandarización de variables
+•	sklearn.decomposition.PCA – reducción lineal de dimensionalidad
+•	sklearn.manifold.TSNE – reducción no lineal para visualización avanzada
+#### Algoritmos de Clustering:
+•	sklearn.cluster.KMeans – clustering particional
+•	sklearn.cluster.DBSCAN – clustering basado en densidad
+#### Métricas y Evaluación:
+•	sklearn.metrics.silhouette_score – medida de calidad del clustering
+•	sklearn.neighbors.NearestNeighbors – análisis de vecinos más cercanos (para estimar eps en DBSCAN)
+________________________________________
+### Herramientas Técnicas Derivadas
+•	Gráficas: codo, silhouette, t-SNE, PCA
+•	Análisis estadístico: media, desviación estándar, percentiles
+•	Visualización exploratoria: mapas de calor, boxplots
+•	Reducción de dimensionalidad: PCA y t-SNE para comprensión visual
+•	Evaluación del modelo: coeficiente de Silhouette y visualización de clusters
 
 ---
 
