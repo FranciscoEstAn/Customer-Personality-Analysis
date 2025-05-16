@@ -234,7 +234,7 @@ A continuación, se presenta el análisis estadístico por clúster. En lugar de
 
 ## Autores
 
-- Francisco Estupiñan 
-- María Fernanda Bolaños
-- Fernando Montaño  
+- Francisco Estupiñan Andrade.
+- María Fernanda Bolaños Escandón.
+- Fernando Montaño Cárdenas. 
 Proyecto de Segmentación de Usuarios - 2025
